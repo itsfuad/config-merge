@@ -7,6 +7,7 @@ from config_merge import analyze
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='Deep-merge JSON configuration layers with last-layer precedence')
+    parser.add_argument('--version', action='version', version='0.2.0')
     parser.add_argument('path', help='Input data file, or - for standard input')
     parser.add_argument('--compact', action='store_true', help='Emit compact JSON')
     parser.add_argument('--out', metavar='PATH', help='Write JSON to a file')
